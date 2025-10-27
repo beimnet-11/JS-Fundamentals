@@ -1,4 +1,10 @@
 const { argv } = require('node:process');
 
 
-console.log(argv[2] + ' is ' + argv[3])
+let num = Number(argv[2])
+
+if (isNaN(num)) {
+    console.log('Not a number')
+} else {
+    console.log('My number: ' + num)
+}
